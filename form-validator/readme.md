@@ -19,7 +19,7 @@ This project demonstrates simple client-side form validation. It checks for requ
 ## 🖼️ Project Preview
 
 <p align="center">
-  <img src="path-to-your-image.jpg" alt="Form Validator Preview">
+  <img src="results.png" alt="Form Validator Preview">
 </p>
 
 Check out how the form validation looks in action! This form provides immediate feedback to users when they attempt to submit the form with incorrect or missing information.
