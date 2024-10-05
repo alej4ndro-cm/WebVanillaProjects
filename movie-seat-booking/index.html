@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Movie Seat Booking</title>
+</head>
+<body>
+    <!-- Select box for the movies (dropdown menu) -->
+    <div class="movie-container">
+        <label>Pick a movie:</label>
+        <select id="movie">
+            <option value="5">LOTR ($5)</option> 
+            <option value="6">Harry Potter ($6)</option>
+            <option value="8">Friday ($8)</option>
+            <option value="9">Transformers ($9)</option>
+        </select>
+    </div>
+
+    <!-- Create the showcase: basically a legend that will show the  color seats that are open, selected, occupied, etc -->
+    <ul class="showcase">
+        <li>
+            <div class="seat"></div>
+            <small>N/A</small> <!-- Seat is open -->
+        </li>
+        <li>
+            <div class="seat selected"></div>
+            <small>Selected</small>
+        </li>
+        <li>
+            <div class="occupied"></div>
+            <small>Occupied</small>
+        </li>
+
+        <!--rows of seats and the little movie screen wrapped in a container-->
+        <div class="container">
+            <div class="screen"></div>
+            <div class="rows">
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+            </div>
+        <!--we need 6 rows, so let's copy them 2/6 times-->
+        <div class="rows">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat occupied"></div>
+            <div class="seat occupied"></div>
+            <div class="seat"></div>
+            <div class="seat occupied"></div>
+            <div class="seat occupied"></div>
+        </div>
+        <!--we need 6 rows, so let's copy them 3/6 times-->
+        <div class="rows">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+        </div>
+        <!--we need 6 rows, so let's copy them 4/6 times-->
+        <div class="rows">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat occupied"></div>
+            <div class="seat occupied"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+        </div>
+        <!--we need 6 rows, so let's copy them 5/6 times-->
+        <div class="rows">
+            <div class="seat "></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat occupied"></div>
+            <div class="seat occupied"></div>
+            <div class="seat occupied"></div>
+            <div class="seat"></div>
+        </div>
+        <!--we need 6 rows, so let's copy them 6/6 times-->
+        <div class="rows">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+        </div>
+
+        <p class="text">You have selected <span id ="count">0</span>seats for a price of $<span id="total">0</span></p>
+
+        </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
