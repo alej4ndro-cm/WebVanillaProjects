@@ -9,13 +9,13 @@
 <body>
     <!-- Select box for the movies (dropdown menu) -->
     <div class="movie-container">
-        <label>Pick a movie:</label>
-        <select id="movie">
-            <option value="5">LOTR ($5)</option> 
-            <option value="6">Harry Potter ($6)</option>
-            <option value="8">Friday ($8)</option>
-            <option value="9">Transformers ($9)</option>
-        </select>
+      <label>Pick a movie:</label>
+      <select id="movie">
+        <option value="10">Avengers: Endgame ($10)</option>
+        <option value="12">Joker ($12)</option>
+        <option value="8">Toy Story 4 ($8)</option>
+        <option value="9">The Lion King ($9)</option>
+      </select>
     </div>
 
     <!-- Create the showcase: basically a legend that will show the  color seats that are open, selected, occupied, etc -->
@@ -32,11 +32,12 @@
             <div class="occupied"></div>
             <small>Occupied</small>
         </li>
+    </ul>
 
         <!--rows of seats and the little movie screen wrapped in a container-->
         <div class="container">
             <div class="screen"></div>
-            <div class="rows">
+            <div class="row">
                 <div class="seat"></div>
                 <div class="seat"></div>
                 <div class="seat"></div>
@@ -47,7 +48,7 @@
                 <div class="seat"></div>
             </div>
         <!--we need 6 rows, so let's copy them 2/6 times-->
-        <div class="rows">
+        <div class="row">
             <div class="seat"></div>
             <div class="seat"></div>
             <div class="seat"></div>
@@ -58,7 +59,7 @@
             <div class="seat occupied"></div>
         </div>
         <!--we need 6 rows, so let's copy them 3/6 times-->
-        <div class="rows">
+        <div class="row">
             <div class="seat"></div>
             <div class="seat"></div>
             <div class="seat"></div>
@@ -69,7 +70,7 @@
             <div class="seat"></div>
         </div>
         <!--we need 6 rows, so let's copy them 4/6 times-->
-        <div class="rows">
+        <div class="row">
             <div class="seat"></div>
             <div class="seat"></div>
             <div class="seat"></div>
@@ -80,7 +81,7 @@
             <div class="seat"></div>
         </div>
         <!--we need 6 rows, so let's copy them 5/6 times-->
-        <div class="rows">
+        <div class="row">
             <div class="seat "></div>
             <div class="seat"></div>
             <div class="seat"></div>
@@ -91,7 +92,7 @@
             <div class="seat"></div>
         </div>
         <!--we need 6 rows, so let's copy them 6/6 times-->
-        <div class="rows">
+        <div class="row">
             <div class="seat"></div>
             <div class="seat"></div>
             <div class="seat"></div>
@@ -101,10 +102,10 @@
             <div class="seat"></div>
             <div class="seat"></div>
         </div>
+    </div>
 
-        <p class="text">You have selected <span id ="count">0</span>seats for a price of $<span id="total">0</span></p>
-
-        </div>
+        <!--this will say: you have selected many seats for the price of-->
+        <p class="text">You have selected <span id ="count">0</span> seats for a price of $<span id="total">0</span></p>
 
     <script src="script.js"></script>
 </body>
